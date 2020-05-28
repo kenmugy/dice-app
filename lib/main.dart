@@ -11,20 +11,31 @@ void main() => runApp(MaterialApp(
       ),
     ));
 
-class DicePage extends StatelessWidget {
+class DicePage extends StatefulWidget {
+  @override
+  _DicePageState createState() => _DicePageState();
+}
+
+class _DicePageState extends State<DicePage> {
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Row(
         children: <Widget>[
           Expanded(
-            child: FlatButton(child: Image.asset('images/dice6.png')),
+            child: FlatButton(
+                onPressed: () => print("u clicked left button"),
+                child: Image.asset('images/dice3.png')),
           ),
           Expanded(
-            child: FlatButton(child: Image.asset('images/dice3.png')),
+            child: FlatButton(
+                onPressed: () => print("u clicked right button"),
+                child: Image.asset('images/dice3.png')),
           ),
         ],
       ),
     );
   }
 }
+
+
