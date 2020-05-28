@@ -16,13 +16,18 @@ class DicePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Expanded(
-            child: Image.asset('images/dice6.png'),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Image.asset('images/dice6.png'),
+            ),
           ),
           Expanded(
-            child: Image.asset('images/dice3.png'),
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Image.asset('images/dice3.png'),
+            ),
           ),
         ],
       ),
