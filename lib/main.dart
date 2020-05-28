@@ -5,15 +5,25 @@ void main() => runApp(MaterialApp(
         backgroundColor: Colors.red,
         appBar: AppBar(
           backgroundColor: Colors.red,
-          title: Text("Dicee"),
+          title: Center(child: Text("Dicee")),
         ),
-        body: DiceBody(),
+        body: DicePage(),
       ),
     ));
 
-class DiceBody extends StatelessWidget {
+class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: <Widget>[
+        Image(
+          height: 250,
+          image: AssetImage('images/pennie.png')),
+        Image(
+          height: 250,
+          image: AssetImage('images/pennie.png')),
+          ],
+    );
   }
 }
