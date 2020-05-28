@@ -14,16 +14,18 @@ void main() => runApp(MaterialApp(
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
-      children: <Widget>[
-        Image(
-          height: 250,
-          image: AssetImage('images/pennie.png')),
-        Image(
-          height: 250,
-          image: AssetImage('images/pennie.png')),
-          ],
+    return Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          Expanded(
+            child: Image(image: AssetImage('images/dice6.png')),
+          ),
+          Expanded(
+            child: Image(image: AssetImage('images/dice3.png')),
+          ),
+        ],
+      ),
     );
   }
 }
