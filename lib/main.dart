@@ -19,10 +19,10 @@ class DicePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
           Expanded(
-            child: Image(image: AssetImage('images/dice6.png')),
+            child: Image.asset('images/dice6.png'),
           ),
           Expanded(
-            child: Image(image: AssetImage('images/dice3.png')),
+            child: Image.asset('images/dice3.png'),
           ),
         ],
       ),
